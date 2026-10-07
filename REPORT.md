@@ -1,48 +1,30 @@
-REPORT.md
+- Учёт времени по шагам:
+Дизайн + вёрстка + настройка самого проекта - 1,5 часа
+SEO-оптимизация - 40 мин +-
+Форма заявки - 30 мин 
+Деплой - 30 мин +-
+Просмотр, проверка, пуш на гит хаб, настройка и тд - (около 2-х часов)
 
-1. Stack utilisé
-Le site a été construit en HTML5, CSS3 et JavaScript vanilla, sans framework ni dépendance lourde. Les animations sont fournies par AOS et les icônes par Lucide, chargées via CDN.
-Les pages utilisent un routage statique par répertoire (`index.html`) avec des URL publiques à barre oblique finale. Les liens internes sont root-relative; `_redirects` canonicalise le domaine et les variantes sans barre finale sans ajouter de redirection catch-all.
+- Что сделал ИИ
 
-2. Responsive
-Le design est mobile-first et utilise CSS Grid et Flexbox pour adapter la mise en page à 360 px, 390 px, 414 px, 768 px, 1024 px et 1440 px. Les sections utilisent des containers fluides, des grilles réactives, des tableaux défilables et des boutons adaptés à la largeur d'écran. Le header et le menu mobile restent sans overflow horizontal.
+ИИ создал структуру страниц, визуальные стили, JavaScript для навигации, форму и калькулятор, а также SEO-теги и содержимое вспомогательных страниц.
 
-3. Header et burger menu
-Le header est sticky, contient le logo PrêtNord, la navigation principale, le bouton d'appel à l'action et le menu mobile complet. Le menu s'ouvre en overlay plein écran, ferme au clic sur un lien ou sur le bouton de fermeture, bloque le scroll du body pendant l'ouverture et rétablit le scroll après fermeture. Les éléments sont vérifiés avant utilisation.
 
-4. Formulaire
-La demande est gérée côté navigateur avec validation HTML5 et validation JavaScript. Les messages d'erreur sont affichés directement sous les champs, la case de consentement est obligatoire, le téléphone est validé selon un format canadien et le bouton de soumission est désactivé pendant l'envoi pour empêcher les doubles clics. À la réussite, les données sont affichées dans la console et redirigées vers la page de remerciement.
+- Что я сделал вручную
 
-5. Cookie popup
-Le popup de consentement utilise localStorage avec la clé pretnord_cookie_consent. Si l'utilisateur a déjà accepté, le popup ne s'affiche plus. Il est stylé, accessible et lie vers la politique de confidentialité.
+Финализация контента, проверка обязательных текстов, проверка соответствия спецификации и консолидация файлов проекта были выполнены вручную.
++ Исправил стили, которые мне не нравились. Изменил позицию некоторых секций. Так же в бургер-меню сделал тоже правки позиционирования Лого и текста справа и ниже него. 
++ исправил маршрутуризацию между страницами в JS.
 
-6. Exigences SEO
-Le site comporte des titres, descriptions, URLs canoniques et balises hreflang spécifiques à chaque page. Les pages sont marquées avec les métadonnées Open Graph et le tag robots noindex, nofollow. Le favicon et les chemins relatifs sont alignés sur la structure du projet.
 
-7. Schéma JSON-LD
-Des types Schema.org ont été ajoutés sur la page d'accueil pour le WebSite et l'Organisation, afin de renforcer l'interopérabilité SEO.
+- Случаи ошибок ИИ, которые были исправлены
 
-8. Emplacement du site
-Le site est localement présent dans le dossier d projet : d:\projects\pretnord.
+Неправильно написан текст
+Пробелы перед : ; ! ?
+Неправильная маршрутизация между страницами
+Ужасная расстановка текста с маршрутизацией в бургер-меню
+В форме была исправлена проверка канадского номера телефона, отображение ошибок возле соответствующих полей
 
-9. Déploiement
-L'URL déployée de référence est : https://pretnord.example
-
-10. Images utilisées
-Les images sont issues de sources professionnelles comme Unsplash : finance, bureau, finances personnelles et travail collaboratif.
-
-11. IA utilisée
-AI intégrée dans VS Code via Copilot.
-
-12. Ce que l'IA a fait
-L'IA a produit la structure des pages, le style visuel, le JavaScript de navigation, le formulaire et le calculateur, ainsi que les balises SEO et le contenu de pages de support.
-
-13. Ce qui a été fait manuellement
-La finalisation du contenu, la vérification des textes requis, la préparation des pages d'atterrissage, la validation de cohérence avec les spécifications et la consolidation des fichiers du projet ont été effectués manuellement.
-
-14. Ce qui a été réécrit après l'IA
-Les éléments de navigation, le comportement du menu mobile, le calculateur, le formulaire et les fichiers SEO ont été ajustés afin de respecter précisément les exigences de l'énoncé et d'éliminer les incohérences.
-
-15. Cas d'erreurs de l'IA corrigés
-- Le menu mobile a été corrigé pour bloquer correctement le scroll lorsque l'overlay est ouvert.
-- Le formulaire valide le téléphone canadien, affiche les erreurs au bon endroit, empêche une soumission multiple et navigue vers `/merci/` après validation.
+Не успел сделать:
+Прилипающую шапку при скролле страницы внмз. В стилях есть position: sticky; top: 0; фон и з-индекс. Но возникла какая-то проблема и это не работает. 
+И доработал бы Lighthouse. СЕО 69%, надо больше постараться и потратить времени.

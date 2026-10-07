@@ -12,7 +12,7 @@ function getHeaderMarkup() {
     .map((item) => `<a href="${item.href}">${item.label}</a>`)
     .join("");
   return `
-    <header class="site-header">
+
       <div class="container header-inner">
         <a href="/" class="brand" aria-label="PrêtNord - Accueil">
           <span class="brand-mark">
@@ -33,7 +33,7 @@ function getHeaderMarkup() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
         </button>
       </div>
-    </header>
+
     <div class="mobile-menu-overlay" id="mobile-menu" aria-hidden="true">
       <div class="mobile-menu">
         <div class="mobile-menu-header">
@@ -60,7 +60,8 @@ function getFooterMarkup() {
           <div class="footer-brand">
             <a href="/" aria-label="PrêtNord - Accueil"><strong>PrêtNord</strong></a>
             <p>PrêtNord (service fictif)</p>
-            <p>1000 rue Exemple, Montréal (Québec) H0H 0H0</p>
+            <p>1000 rue Exemple</p>
+            <p>Montréal (Québec) H0H 0H0</p>
             <p>514 555 0142</p>
             <p>bonjour@pretnord.example</p>
             <p>PrêtNord n'est pas un prêteur</p>

@@ -42,7 +42,7 @@
   </script>
 </head>
 <body>
-  <div data-site-header></div>
+  <header data-site-header></header>
 
   <main>
     <section class="hero">
@@ -92,7 +92,7 @@
       <div class="container">
         <div class="section-heading" data-aos="fade-up">
           <div class="section-kicker">Avantages</div>
-          <h2>Pourquoi passer par PrêtNord ?</h2>
+          <h2>Pourquoi passer par PrêtNord?</h2>
         </div>
         <div class="feature-grid">
           <article class="feature-card" data-aos="fade-up">
@@ -124,22 +124,19 @@
           <article class="step-card" data-aos="fade-up">
             <div class="step-number">01</div>
             <div>
-              <h3>Complétez la demande</h3>
-              <p>Remplissez la demande en ligne, en 5 minutes environ.</p>
+              <h3>Remplissez la demande en ligne, en 5 minutes environ.</h3>
             </div>
           </article>
           <article class="step-card" data-aos="fade-up" data-aos-delay="100">
             <div class="step-number">02</div>
             <div>
-              <h3>Vérification du dossier</h3>
-              <p>Un prêteur partenaire vérifie votre dossier, parfois par vérification bancaire instantanée (IBV).</p>
+              <h3>Un prêteur partenaire vérifie votre dossier, parfois par vérification bancaire instantanée (IBV).</h3>
             </div>
           </article>
           <article class="step-card" data-aos="fade-up" data-aos-delay="200">
             <div class="step-number">03</div>
             <div>
-              <h3>Signature et versement</h3>
-              <p>Vous signez le contrat et recevez les fonds par virement Interac.</p>
+              <h3>Vous signez le contrat et recevez les fonds par virement Interac.</h3>
             </div>
           </article>
         </div>
@@ -150,7 +147,7 @@
       <div class="container content-card" data-aos="fade-up">
         <div class="section-heading">
           <div class="section-kicker">Calculateur</div>
-          <h2>Combien coûte un prêt ?</h2>
+          <h2>Combien coûte un prêt?</h2>
         </div>
         <div class="calculator-grid">
           <div class="range-group">
@@ -228,20 +225,20 @@
         </div>
         <div class="faq-list">
           <details open data-aos="fade-up">
-            <summary>Est-ce que PrêtNord accorde des prêts ?</summary>
+            <summary>Est-ce que PrêtNord accorde des prêts?</summary>
             <div class="faq-answer">Non. PrêtNord est un service de mise en relation. La décision, le taux et le contrat relèvent uniquement du prêteur.</div>
           </details>
           <details data-aos="fade-up" data-aos-delay="50">
-            <summary>Une mauvaise cote de crédit m'empêche-t-elle de faire une demande ?</summary>
+            <summary>Une mauvaise cote de crédit m'empêche-t-elle de faire une demande?</summary>
             <div class="faq-answer">Non, mais elle peut influencer le taux proposé. Certains prêteurs tiennent davantage compte de vos revenus que de votre cote.</div>
           </details>
           <details data-aos="fade-up" data-aos-delay="100">
-            <summary>En combien de temps reçoit-on les fonds ?</summary>
+            <summary>En combien de temps reçoit-on les fonds?</summary>
             <div class="faq-answer">Généralement le jour ouvrable qui suit la signature, par virement Interac.</div>
           </details>
           <details data-aos="fade-up" data-aos-delay="150">
-            <summary>Mes renseignements sont-ils protégés ?</summary>
-            <div class="faq-answer">Oui. Ils sont chiffrés et conservés 90 jours au maximum, conformément à la Loi 25. Consultez notre « Politique de confidentialité ».</div>
+            <summary>Mes renseignements sont-ils protégés?</summary>
+            <div class="faq-answer">Oui. Ils sont chiffrés et conservés 90 jours au maximum, conformément à la Loi 25. Consultez notre «Politique de confidentialité».</div>
           </details>
         </div>
       </div>
@@ -310,6 +307,18 @@
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="./js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Est-ce que PrêtNord accorde des prêts ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. PrêtNord est un service de mise en relation. La décision, le taux et le contrat relèvent uniquement du prêteur."}},
+      {"@type": "Question", "name": "Une mauvaise cote de crédit m'empêche-t-elle de faire une demande ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, mais elle peut influencer le taux proposé. Certains prêteurs tiennent davantage compte de vos revenus que de votre cote."}},
+      {"@type": "Question", "name": "En combien de temps reçoit-on les fonds ?", "acceptedAnswer": {"@type": "Answer", "text": "Généralement le jour ouvrable qui suit la signature, par virement Interac."}},
+      {"@type": "Question", "name": "Mes renseignements sont-ils protégés ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Ils sont chiffrés et conservés 90 jours au maximum, conformément à la Loi 25. Consultez notre «Politique de confidentialité»."}}
+    ]
+  }
+  </script>
 </body>
 </html>
