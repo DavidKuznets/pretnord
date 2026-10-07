@@ -1,0 +1,24 @@
+http://pretnord.example/pret-personnel-en-ligne https://pretnord.example/pret-personnel-en-ligne/ 301!
+http://www.pretnord.example/pret-personnel-en-ligne https://pretnord.example/pret-personnel-en-ligne/ 301!
+https://www.pretnord.example/pret-personnel-en-ligne https://pretnord.example/pret-personnel-en-ligne/ 301!
+https://pretnord.example/pret-personnel-en-ligne https://pretnord.example/pret-personnel-en-ligne/ 301!
+http://pretnord.example/pret-1000 https://pretnord.example/pret-1000/ 301!
+http://www.pretnord.example/pret-1000 https://pretnord.example/pret-1000/ 301!
+https://www.pretnord.example/pret-1000 https://pretnord.example/pret-1000/ 301!
+https://pretnord.example/pret-1000 https://pretnord.example/pret-1000/ 301!
+http://pretnord.example/politique-de-confidentialite https://pretnord.example/politique-de-confidentialite/ 301!
+http://www.pretnord.example/politique-de-confidentialite https://pretnord.example/politique-de-confidentialite/ 301!
+https://www.pretnord.example/politique-de-confidentialite https://pretnord.example/politique-de-confidentialite/ 301!
+https://pretnord.example/politique-de-confidentialite https://pretnord.example/politique-de-confidentialite/ 301!
+http://pretnord.example/merci https://pretnord.example/merci/ 301!
+http://www.pretnord.example/merci https://pretnord.example/merci/ 301!
+https://www.pretnord.example/merci https://pretnord.example/merci/ 301!
+https://pretnord.example/merci https://pretnord.example/merci/ 301!
+http://pretnord.example/404 https://pretnord.example/404/ 301!
+http://www.pretnord.example/404 https://pretnord.example/404/ 301!
+https://www.pretnord.example/404 https://pretnord.example/404/ 301!
+https://pretnord.example/404 https://pretnord.example/404/ 301!
+
+http://www.pretnord.example/* https://pretnord.example/:splat 301!
+http://pretnord.example/* https://pretnord.example/:splat 301!
+https://www.pretnord.example/* https://pretnord.example/:splat 301!
