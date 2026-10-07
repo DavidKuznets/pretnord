@@ -303,6 +303,7 @@ h2 {
   transition: opacity .25s ease, visibility .25s ease;
 }
 
+
 .mobile-menu-overlay.is-open {
   opacity: 1;
   visibility: visible;
@@ -328,7 +329,8 @@ h2 {
 }
 
 .mobile-menu a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: .9rem 1rem;
   border-radius: 12px;
   font-size: 1.05rem;
@@ -427,6 +429,14 @@ h2 {
   box-shadow: var(--shadow);
   padding: .9rem 1rem;
   max-width: 190px;
+}
+
+@media (max-width: 767px) {
+  .hero-visual .floating-card {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .floating-card strong {
